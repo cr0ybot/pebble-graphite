@@ -58,7 +58,7 @@ Pebble.addEventListener('showConfiguration', function () {
     url += '&watch=' + encodeURIComponent(getDetails());
 // -- autogen
 // --     url += '&version={{ version }}';
-    url += '&version=1.4';
+    url += '&version=1.6';
 // -- end autogen
 
 // -- build=debug
@@ -650,7 +650,7 @@ function fetchWeather(latitude, longitude) {
         if (!load_rain) exclude.push('hourly');
         query += "&appid=fa5280deac4b98572739388b55cd7591";
         query += "&exclude=" + exclude.join(',');
-        query = "http://api.openweathermap.org/data/2.5/onecall?" + query;
+        query = "http://api.openweathermap.org/data/3.0/onecall?" + query;
         runRequest(query, function (response) {
             if (load_cur || load_sun) {
                 cur = response.current.temp - 273.15;

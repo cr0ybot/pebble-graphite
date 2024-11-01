@@ -8,6 +8,11 @@ See [stefanheule.com/graphite/](https://stefanheule.com/graphite/).
 
 ## Changelog
 
+**Version 1.6** (2024-10-28)
+
+- Update to OpenWeatherMap One Call API 3.0.
+
+
 **Version 1.5** (2021-10-04)
 
 - Add support for hourly rain forcast from openweathermap.org.
